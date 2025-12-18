@@ -1,0 +1,24 @@
+[
+  {
+    "id": 6,
+    "name": "Product 6",
+    "price": 600,
+    "image": "/images/headset.jpg"
+  },
+  {
+    "id": 1765509765588
+  },
+  {
+    "id": 2,
+    "name": "Cart 2",
+    "price": 200,
+    "image": "/images/headset.jpg"
+  },
+
+  {
+    "id": 1765520577488,
+    "name": "product 99",
+    "price": 999999,
+    "image": "/images/headset.jpg"
+  }
+]
