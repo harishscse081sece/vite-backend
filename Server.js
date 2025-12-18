@@ -42,6 +42,7 @@
 //     ]
 require('dotenv').config();
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const fs = require("fs");
 const productsRouter = require("./routes/products");
@@ -51,9 +52,12 @@ const authRouter = require("./routes/auth");
 const authmiddleware = require("./middlewares/authmiddleware");
 const User = require("./routes/models/user");
 createDB();
-// const cors = require("cors")
-// process - process betweent the req and res
-// Anything inside app.use() is middleware
+
+// CORS Configuration
+app.use(cors({
+    origin: ['https://inventory-nine-rose.vercel.app', 'http://localhost:5173'],
+    credentials: true
+}));
 
 app.use(express.json());  
 
